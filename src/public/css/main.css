@@ -1,0 +1,136 @@
+body {
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo {
+    width: 60px !important;
+    height: 65px !important;
+    margin: 0 15px 0 15px !important;
+}
+
+.nav-link{
+    text-align: right !important;
+    margin: 0 15px 0 0;
+}
+
+.enlaces{
+    margin: 0 0 0 auto !important;
+}
+.submitAlternative{
+  margin-top: 25px;
+  border-radius: 9px;
+}
+
+footer {
+  position: fixed;
+  height: 55px;
+  bottom: 0;
+  width: 100%;
+}
+footer .copyright{
+  background-color: #212529;
+  color: white;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.space {
+  margin-top: 100px;
+}
+
+/* FORM STEPS */
+
+#regForm {
+  /* background-color: #ffffff; */
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+.tab .form-check {
+  margin: 0 0 0 30%;
+}
+
+#nextBtn {
+  margin-top: 35px;
+  border-radius: 9px;
+}
+
+button {
+  background-color: #123c51;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #4a6e80;
+  border-radius: 9px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #282b2e;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.15;
+}
+
+.step.active {
+  opacity: 1;
+  height: 17px;
+  width: 17px;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  opacity: 0.6;
+  background-color: #000;
+}
+/* ---------------- */
+
+/* TABLE */
+
+table, tr, td, th {
+  border: 0;
+}
+
+/* ---------------- */

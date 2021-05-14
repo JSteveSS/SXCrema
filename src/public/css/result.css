@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+td {
+    margin: 0 !important;
+}
+#imgCrema {
+    margin-top: 25px;
+    width: 190px;
+    height: 215px;
+}
+
+#nombreCrema {
+    padding: 75px 0 0 0;
+    margin: 0;
+}
+
+#precioCrema {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    margin: 50%;
+}

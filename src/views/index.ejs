@@ -1,0 +1,356 @@
+<%-  include  ('partials/_header');  -%>
+<%-  include  ('partials/_navigation');  -%>
+
+<form id="regForm" action="/result" method="GET">
+
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+    <h1>Empezemos...</h1><br><br>
+    <h1>¿Cuál es tu tipo de porosidad?</h1><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="porosidad" value="baja" required>
+            <label class="form-check-label" for="flexRadioDefault1">
+              Baja
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="porosidad" value="media">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Media
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="porosidad" value="alta">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Alta
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <div class="tab">
+    <h1>¿Cuál es tu patrón de cabello?</h1><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="2a">
+            <label class="form-check-label" for="flexRadioDefault1">
+              2a
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="2b">
+            <label class="form-check-label" for="flexRadioDefault2">
+              2b
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="2c">
+            <label class="form-check-label" for="flexRadioDefault2">
+              2c
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="3a">
+            <label class="form-check-label" for="flexRadioDefault1">
+              3a
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="3b">
+            <label class="form-check-label" for="flexRadioDefault2">
+              3b
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="3c">
+            <label class="form-check-label" for="flexRadioDefault2">
+              3c
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="4a">
+            <label class="form-check-label" for="flexRadioDefault1">
+              4a
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="4b">
+            <label class="form-check-label" for="flexRadioDefault2">
+              4b
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="4c">
+            <label class="form-check-label" for="flexRadioDefault2">
+              4c
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          &nbsp;
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="patron" value="1">
+            <label class="form-check-label" for="flexRadioDefault2">
+              1
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          &nbsp;
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="tab">
+    <h1>¿Cuál te gustaría más?</h1><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="volDef" value="volumen">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Mayor Volúmen
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="volDef" value="definicion">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Mayor Definición
+            </label>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="tab">
+    <h1>¿Te encuentras en una fase de transición?</h1><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="transicion" value="si">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Si
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="transicion" value="no">
+            <label class="form-check-label" for="flexRadioDefault2">
+              No
+            </label>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="tab">
+    <h1>¿Tu cabello es natural?</h1><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="natural" value="si">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Si
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="natural" value="no">
+            <label class="form-check-label" for="flexRadioDefault2">
+              No
+            </label>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="tab">
+    <h1>¿Qué problema tienes con tu cabello?</h1><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="opaco" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Opaco
+            </label>
+          </div>          
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="frizz" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Frizz
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="puntasAbiertas" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Puntas Abiertas
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="caidaCabello" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Caída del cabello
+            </label>
+          </div>          
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="debilFragil" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Débil o frágil
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="cabelloDanado" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Cabello dañado
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          &nbsp;         
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="caspa" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Caspa
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab">
+    <h1>¿Qué beneficios buscas para tu cabello?</h1><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="brillo" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Brillo
+            </label>
+          </div>          
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="resistencia" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Resistencia
+            </label>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="fuerza" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Fuerza
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="acelerar" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Acelerar el crecimiento
+            </label>
+          </div>          
+        </div>
+        <div class="col-sm">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="reparacion" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Reparación
+            </label>
+          </div>
+        </div>        
+      </div>      
+    </div>
+  </div>
+
+  <!-- Buttons previous/next -->
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+
+  <!-- Button submit -->
+  <div class="d-flex justify-content-around">
+    <button type="submit" class="submitAlternative">Ver Resultado</button>
+  </div>
+  
+</form>
+
+<%-  include  ('partials/_footer');  -%>
